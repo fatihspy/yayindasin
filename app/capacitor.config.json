@@ -1,0 +1,27 @@
+{
+  "appId": "com.yayindasin.app",
+  "appName": "Yayındasın",
+  "webDir": "www",
+  "backgroundColor": "#0F0C22",
+  "android": {
+    "allowMixedContent": false,
+    "captureInput": true
+  },
+  "ios": {
+    "contentInset": "never",
+    "limitsNavigationsToAppBoundDomains": false
+  },
+  "plugins": {
+    "SystemBars": {
+      "insetsHandling": "native",
+      "initialViewportFitValueHint": "cover",
+      "style": "DARK"
+    },
+    "SplashScreen": {
+      "launchAutoHide": false,
+      "launchShowDuration": 3000,
+      "backgroundColor": "#0F0C22",
+      "showSpinner": false
+    }
+  }
+}

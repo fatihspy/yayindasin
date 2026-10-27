@@ -1,0 +1,7 @@
+node_modules/
+.env
+.DS_Store
+*.log
+# Capacitor copies www/ into the native projects on every sync
+app/android/app/src/main/assets/public/
+app/ios/App/App/public/

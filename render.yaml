@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: yayindasin-api
+    runtime: node
+    rootDir: server
+    plan: free
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: MONGODB_URI
+        sync: false
+      - key: APP_KEY
+        sync: false
+      - key: TRAINER_KEY
+        generateValue: true
+      - key: MODEL_QUICK
+        value: claude-haiku-5-5
+      - key: MODEL_DEFAULT
+        value: claude-sonnet-5-5

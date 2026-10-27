@@ -1,0 +1,27 @@
+{
+  "name": "yayindasin-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Yayındasın: Spikerlik ve Sunuculuk Simülasyonu (Capacitor)",
+  "scripts": {
+    "sync": "cap sync",
+    "android": "cap sync android && cap open android",
+    "ios": "cap sync ios && cap open ios",
+    "icons": "capacitor-assets generate --android --ios --iconBackgroundColor '#4B2BD6' --iconBackgroundColorDark '#4B2BD6' --splashBackgroundColor '#0F0C22' --splashBackgroundColorDark '#0F0C22'",
+    "serve": "npx http-server www -p 5173 -c-1"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.3",
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/core": "^8.5.3",
+    "@capacitor/filesystem": "^8.1.5",
+    "@capacitor/ios": "^8.5.3",
+    "@capacitor/share": "^8.0.3",
+    "@capacitor/splash-screen": "^8.0.2",
+    "@fontsource-variable/archivo": "^5.3.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^8.5.3"
+  }
+}
